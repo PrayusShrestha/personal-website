@@ -6,7 +6,7 @@ function ExperienceList(props) {
     // console.log(json["experiences"]);
     const experiences = json.experiences.filter((experience) => { return experience.type == title; });
     return (
-        <div>
+        <div class="resume-section">
             <h1>{title}</h1>
             {experiences.map(experience => {
                 return (

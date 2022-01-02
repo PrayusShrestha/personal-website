@@ -20,29 +20,32 @@ function ExperienceListItem(props) {
     setArrowDir(arrowDir * -1);
   }
 
+  const logo_route = require("../data/logos/" + logo);
 
   return (
       <div onClick={handleClick} className="border-2 p-2 hover:bg-zinc-300">
         <Disclosure>
-          <Disclosure.Button className="py-2 w-full">
-              {/* <div className="inline float-left h-1/6">
+          <Disclosure.Button className="py-2 w-full inline">
+              {/* <div className="inline float-left">
                 <img src={logo_route}></img>
               </div> */}
-              <div className="inline float-left text-left"> 
+              <div className="text-left inline float-left"> 
                 <a className="hover:font-medium" href={link} target="_blank" >
                   <FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon>: {company} 
                 </a>
                 <br></br>
                 <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>: {title}
-              </div>
-              <div className="inline float-center">
-                <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
-              </div>
-              <div className="inline float-right text-left"> 
-                <FontAwesomeIcon icon={faMapPin}></FontAwesomeIcon>: {location}
                 <br></br>
+              {/* </div>
+              <div className="inline text-left float-right">  */}
+                <FontAwesomeIcon className="" icon={faMapPin}></FontAwesomeIcon> : {location}                
+                  <br></br>
                 <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>: {start} - {end ? end : "Present"}
               </div>
+              <div className="inline">
+                <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
+              </div>
+
           </Disclosure.Button>
           <Disclosure.Panel className="text-gray-500">
               <ul className="list-disc">

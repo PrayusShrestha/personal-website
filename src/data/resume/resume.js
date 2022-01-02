@@ -71,6 +71,34 @@ const json = {
             ]
         },  
         {
+            "type": "Additional Experience", 
+            "company": "UBC Open Robotics", 
+            "title": "Software Developer", 
+            "logo": "istall.png",
+            "link": "http://www.ubcopenrobotics.ca",
+            "start": "Mar. 2021", 
+            "end": "", 
+            "location": "Vancouver, BC, Canada",
+            "bullets": [
+                "Created a C++ library to convert MIDI music files into instructions for a piano-playing robot",
+                "Achieved 94% code coverage through Google Test unit tests and added GitHub Actions for CI"
+            ]
+        },    
+        {
+            "type": "Additional Experience", 
+            "company": "FantasyBot", 
+            "title": "Founding Engineer", 
+            "logo": "istall.png",
+            "link": "https://www.justaskfelix.com",
+            "start": "Apr. 2020", 
+            "end": "May 2021", 
+            "location": "Remote",
+            "bullets": [
+                "Led development of an SMS-based chat-bot, obtaining 250+ users within 4 months of release",
+                "Built a Node.js API to handle user registrations, interface MongoDB documents, and integrate Twilio services"
+            ]
+        },   
+        {
             "type": "Work Experience", 
             "company": "iStall", 
             "title": "Software Engineer Intern", 
@@ -106,7 +134,7 @@ const json = {
         {
             "name": "Name & Shame", 
             "github_url": "https://github.com/PrayusShrestha/name-and-shame", 
-            "description": "Dockerized web-application in Node.js with a MongoDB database, and React.js in the frontend that allows users to search and post on what companies have unethical practices", 
+            "description": "Developed a dockerized web-application in Node.js with a MongoDB database, and React.js in the frontend that allows users to search and post on what companies have unethical practices", 
             "start": "Sept. 2021", 
             "end": "Sept. 2021", 
             "tech_stack": ["Node.js", "React.js", "MongoDB", "Docker"]

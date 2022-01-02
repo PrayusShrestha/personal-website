@@ -5,6 +5,6 @@
 
 @layer components {
     .resume-section {
-      @apply m-14
+      @apply m-10
     }
   }

@@ -7,7 +7,7 @@ function ProjectList() {
     const projects = json.projects;
 
     return (
-        <div>
+        <div class="resume-section">
             <h1>Projects</h1>
             {projects.map(project => {
                 return (

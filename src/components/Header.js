@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import json  from '../data/resume/resume';
+import { forwardRef } from 'react';
 
-function Header() {
+// function Header(props) {
+const Header = forwardRef(({ workExperienceClick }, ref) => {
+
+
     const linkedin_url = json["personal"]["linkedin_url"];
     const github_url = json["personal"]["github_url"];
     const email = json["personal"]["email"];
@@ -27,13 +31,17 @@ function Header() {
                 </li>
                 <li className="inline block pr-4">
                     <a target="_blank" href={"mailto:" + email}>
-                    <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-                </a>
-            </li>
-        </ul><hr></hr>
+                        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                    </a>
+                </li>
+                <li onClick={workExperienceClick}>
+                    test
+                </li>
+            </ul>
+            <hr></hr>
         </nav>
     );
 
   }
-  
+)
 export default Header;
