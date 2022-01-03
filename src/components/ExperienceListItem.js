@@ -23,48 +23,37 @@ function ExperienceListItem(props) {
   const logo_route = require("../data/logos/" + logo);
 
   return (
-      <div className="border-t-2 border-r-2 border-l-2">
-        <Disclosure>
-          <div onClick={handleClick}>
-            <Disclosure.Button className="py-2 border-b-2 w-full inline hover:bg-zinc-300">
-                {/* <div className="inline float-left">
-                  <img src={logo_route}></img>
-                </div> */}
-                <div className="text-left inline float-left"> 
-                  <a className="hover:font-medium" href={link} target="_blank" >
-                    <FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon>: {company} 
-                  </a>
-                  <br></br>
-                  <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>: {title}
-                  <br></br>
-                {/* </div>
-                <div className="inline text-left float-right">  */}
-                  <FontAwesomeIcon className="" icon={faMapPin}></FontAwesomeIcon> : {location}                
-                    <br></br>
-                  <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>: {start} - {end ? end : "Present"}
-                </div>
-                <div className="inline">
-                  <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
-                </div>
-
-            </Disclosure.Button>
+      <>
+        <div class="flex flex-col justify-center h-1/3 m-4">
+          <div
+            class="relative w-5/6 flex md:flex-row space-x-5 space-y-3 space-y-0 rounded-xl shadow-lg p-3 mx-auto border border-black bg-white relative">
+            <div class="w-full w-1/4 bg-white grid place-items-center text-xs">
+              <img src={logo_route} alt="Company Logo"/>
+            </div>
+            <div class="w-full bg-white flex-col p-3 inline">
+              <div class="font-black text-gray-800 text-lg"> 
+                <div>
+                  {company}
+                </div> 
+                <div>{title}</div>
+              </div>
+              <p class="md:text-lg text-gray-500 text-base">
+                <ul className="list-disc">
+                  {bullets.map(bullet => {
+                    return(
+                      <li className="ml-4">
+                        {bullet}
+                      </li>
+                    
+                    )
+                  })}
+                </ul>   
+              </p>
+            </div>
           </div>
-          <Disclosure.Panel className="text-gray-500">
-              <ul className="list-disc border-b-2">
-                {bullets.map(bullet => {
-                  return(
-                    <li className="hover:font-medium ml-4">
-                      {bullet}
-                    </li>
-                  )
-                })}
-              </ul>
-          </Disclosure.Panel>
-        </Disclosure>
-      </div>
-        
+        </div>
+      </> 
     );
-
 }
 
 export default ExperienceListItem;

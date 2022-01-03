@@ -7,10 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function About() {
 
     return ( 
-            <div class="flex p-10 w-3/4 m-auto mb-20 text-center">
+            <div class="flex p-10 w-3/4 m-auto mb-20 text-center bg-black">
                 <div class="border border-gray-400 bg-white rounded-3xl p-4 flex flex-col justify-between leading-normal">
                     <div class="mb-8">
-                        <div class="text-gray-900 font-bold text-xl mb-2">Welcome!</div>
+                        <div class="text-white font-bold text-xl mb-2">Welcome!</div>
                         <p class="text-gray-700 text-base">
                             {json.personal.about}
                         </p>

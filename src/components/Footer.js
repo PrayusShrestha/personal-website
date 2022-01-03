@@ -1,7 +1,10 @@
 function Footer() {
 
     return (
-      <h1>Bye</h1>
+      <div className="text-center border-t-1 bg-blue-300">
+        Made by Prayus Shrestha {new Date().getFullYear()}
+
+      </div>
     );
   }
   

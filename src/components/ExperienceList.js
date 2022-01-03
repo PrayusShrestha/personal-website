@@ -37,7 +37,7 @@ function ExperienceList(props) {
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform scale-95 opacity-0"
                 >
-                <Disclosure.Panel className="text-gray-500">
+                <Disclosure.Panel className="text-black-500">
                     {experiences.map(experience => {
                         return (
                             <div class="resume-section">
@@ -49,6 +49,28 @@ function ExperienceList(props) {
                 </Transition>
             </Disclosure>
         </div>
+        // <div class="border m-4 relative">
+        //         <div onClick={handleClick}>
+        //                 <h1 className="inline pr-4">
+        //                     title
+        //                 </h1>
+        //                 | 
+        //                 <div className="inline pl-4">
+        //                     <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
+        //                 </div>
+        //          </div>
+                
+        //         <div>
+        //             {experiences.map(experience => {
+        //                 return (
+        //                     <div class="">
+        //                         <ExperienceListItem data={experience} />
+        //                     </div>
+        //                 );
+        //             })}
+        //         </div>
+
+        // </div>
 
 
 

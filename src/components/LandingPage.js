@@ -3,6 +3,7 @@ import Typist from 'react-typist'
 import About from "./About"
 import Education from "./Education"
 import ExperienceList from "./ExperienceList"
+import Footer from "./Footer"
 import Header from "./Header"
 import ProjectList from "./ProjectList"
 import ResumeSection from "./ResumeSection"
@@ -19,20 +20,12 @@ function LandingPage() {
         setIdx(idx + 1);
     }
 
-    const workExperienceRef = useRef();
-
-    const handleWorkExperienceClick = () => {
-        console.log("clicked work experience"); 
-        console.log(workExperienceRef);
-        workExperienceRef.current.scrollIntoView({ behavior: 'smooth' })
-    }
-
 
     return(
         <>
-            <Header workExperienceClick={handleWorkExperienceClick}/>
+            <Header/>
             <div className="h-screen">
-                <div className="text-4xl text-center absolute left-1/2 top-2/4 -translate-x-1/2 -translate-y-1/2">
+                <div className="text-4xl text-center relative left-1/2 top-2/4 -translate-x-1/2 -translate-y-1/2">
                     <h1 className="text-8xl pb-4">Prayus Shrestha</h1>    
                     <Typist onTypingDone={onTypingDone} avgTypingDelay={80} stdTypingDelay={0} key={idx}>
                         {`I'm` } {messages[idx % messages.length]}
@@ -41,12 +34,13 @@ function LandingPage() {
                 </div>  
             </div>
             <About />
-            <div className="">
-                <ExperienceList ref={workExperienceRef} type="Work Experience"/>
-                <ExperienceList type="Additional Experience"/>
+            <div className="mt-4 mb-4">
+                <ExperienceList type="Work Experience"/>
+                <ExperienceList type="Additional Experience"/> 
                 <ProjectList />
+                
             </div>
-            
+            <Footer />
         </>
     )
 }
