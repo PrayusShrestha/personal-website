@@ -122,16 +122,16 @@ const json = {
         {
             "type": "Work Experience", 
             "company": "The Roving ChessNuts", 
-            "title": "Software Engineer Intern", 
+            "title": "Chess Instructor", 
             "link": "http://rovingchessnuts.com/",
             "logo": "roving_chessnuts.png",
-            "start": "Mar. 2020", 
-            "end": "Apr. 2021", 
+            "start": "Feb. 2016", 
+            "end": "Sept. 2021", 
             "location": "Edmonton, AB, Canada",
             "bullets": [
-                "Developed a voice response system and an automated SMS system with PHP, reducing related costs by 80%",
-                "Created a full-stack administration interface using PHP and MySQL for account verification",
-                "Gathered client requirements and wrote PostgreSQL queries in creation of data reports and dashboards"
+                "Instructed 100+ students on chess strategy and privately coached a student nationally ranked 1st in his grade",
+                "Organized and directed tournaments at community halls, schools, and the local NHL arena"
+
             ]
         }
          
