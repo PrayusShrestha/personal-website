@@ -23,38 +23,39 @@ function ExperienceListItem(props) {
   const logo_route = require("../data/logos/" + logo);
 
   return (
-      <div onClick={handleClick} className="border-2 p-2 hover:bg-zinc-300">
+      <div className="border-t-2 border-r-2 border-l-2">
         <Disclosure>
-          <Disclosure.Button className="py-2 w-full inline">
-              {/* <div className="inline float-left">
-                <img src={logo_route}></img>
-              </div> */}
-              <div className="text-left inline float-left"> 
-                <a className="hover:font-medium" href={link} target="_blank" >
-                  <FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon>: {company} 
-                </a>
-                <br></br>
-                <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>: {title}
-                <br></br>
-              {/* </div>
-              <div className="inline text-left float-right">  */}
-                <FontAwesomeIcon className="" icon={faMapPin}></FontAwesomeIcon> : {location}                
+          <div onClick={handleClick}>
+            <Disclosure.Button className="py-2 border-b-2 w-full inline hover:bg-zinc-300">
+                {/* <div className="inline float-left">
+                  <img src={logo_route}></img>
+                </div> */}
+                <div className="text-left inline float-left"> 
+                  <a className="hover:font-medium" href={link} target="_blank" >
+                    <FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon>: {company} 
+                  </a>
                   <br></br>
-                <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>: {start} - {end ? end : "Present"}
-              </div>
-              <div className="inline">
-                <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
-              </div>
+                  <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>: {title}
+                  <br></br>
+                {/* </div>
+                <div className="inline text-left float-right">  */}
+                  <FontAwesomeIcon className="" icon={faMapPin}></FontAwesomeIcon> : {location}                
+                    <br></br>
+                  <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>: {start} - {end ? end : "Present"}
+                </div>
+                <div className="inline">
+                  <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
+                </div>
 
-          </Disclosure.Button>
+            </Disclosure.Button>
+          </div>
           <Disclosure.Panel className="text-gray-500">
-              <ul className="list-disc">
+              <ul className="list-disc border-b-2">
                 {bullets.map(bullet => {
                   return(
                     <li className="hover:font-medium ml-4">
                       {bullet}
                     </li>
-                  
                   )
                 })}
               </ul>
@@ -63,9 +64,7 @@ function ExperienceListItem(props) {
       </div>
         
     );
-    // return ( 
-    //     <span> An Item </span>
-    //  );
+
 }
 
 export default ExperienceListItem;

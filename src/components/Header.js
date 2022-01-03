@@ -13,7 +13,7 @@ const Header = forwardRef(({ workExperienceClick }, ref) => {
     const github_url = json["personal"]["github_url"];
     const email = json["personal"]["email"];
     return (
-        <nav className="sticky width-full bg-blue-300 text-white px-6 py-4 ring-1 ring-gray-900/5 shadow-xl">
+        <nav className="sticky absolute top-0 width-full bg-blue-300 text-white px-6 py-4 shadow-xl">
             <ul className="m-0 p-0 list-none">
                 <li className="inline pr-2 border-r-2 mr-6 ">
                     Prayus Shrestha
@@ -33,9 +33,6 @@ const Header = forwardRef(({ workExperienceClick }, ref) => {
                     <a target="_blank" href={"mailto:" + email}>
                         <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                     </a>
-                </li>
-                <li onClick={workExperienceClick}>
-                    test
                 </li>
             </ul>
             <hr></hr>

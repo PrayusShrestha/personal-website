@@ -5,6 +5,9 @@
 
 @layer components {
     .resume-section {
-      @apply m-10
+      @apply m-20
+    }
+    .resume-heading {
+      @apply w-11/12 mb-4 m-auto border border-gray-400 bg-white rounded-3xl p-4 flex-col justify-between leading-normal
     }
   }
