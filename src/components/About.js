@@ -1,38 +1,49 @@
-import headshot from '../data/cartoon_headshot.png'
-import Education from './Education';
-// export default function About() {
-//     return (
-//       <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-//         hi
-//       </div>
-//     )
-//   }
+import headshot from '../data/cartoon_headshot.png';
+import json from '../data/resume/resume';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 function About() {
 
     return ( 
-        // <div className="translate-x-1/2 h-8/12 m-4 flex  overflow-hidden w-8/12 border-2 rounded text-4xl">
-        <>
-        <div className="w-screen h-[32rem] block"> 
+            <div class="flex p-10 w-3/4 m-auto mb-20 text-center">
+                <div class="border border-gray-400 bg-white rounded-3xl p-4 flex flex-col justify-between leading-normal">
+                    <div class="mb-8">
+                        <div class="text-gray-900 font-bold text-xl mb-2">Welcome!</div>
+                        <p class="text-gray-700 text-base">
+                            {json.personal.about}
+                        </p>
+                    </div>
+                    <div class="flex items-center m-auto mt-2">
+                        <img class="w-10 h-10 rounded-full mr-4" src={headshot} alt="Avatar of Prayus"></img>
+                        <div class="text-sm">
+                            <ul className="m-0 p-0 list-none text-lg">
+                                <li className="inline pr-4 border-r-2 mr-6 border-black ">
+                                    Prayus Shrestha
+                                </li>
+                                <li className="inline block pr-4">
+                                    <a target="_blank" href={json.personal.linkedin_url}>
+                                        <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                                    </a>
+                                </li>
+                                <li className="inline block pr-4">
+                                    <a target="_blank" href={json.personal.github_url}>
+                                        <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                                    </a>
+                                </li>
+                                <li className="inline block pr-4">
+                                    <a target="_blank" href={"mailto:" + json.personal.email}>
+                                        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                                    </a>
+                                </li>
+                            </ul>
 
-
-            <div className="w-8/12 border-2 left-1/2 absolute -translate-x-1/2">
-                    
-                <img className="float-left border-r-2" alt="headshot" src={headshot}></img>
-            
-                <h2 className="pb-4">Thanks for stopping by</h2>
-                <p className="text-sm">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-
-        </div>
-        </>
      );
 }
 

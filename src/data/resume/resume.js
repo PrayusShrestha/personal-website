@@ -3,7 +3,13 @@ const json = {
         "email": "prayuss@yahoo.com", 
         "phone_number": "(780) 974-9364", 
         "linkedin_url": "http://linkedin.com/in/prayus-shrestha/", 
-        "github_url": "https://github.com/PrayusShrestha"
+        "github_url": "https://github.com/PrayusShrestha", 
+        "about": "My name is Prayus Shrestha, and I'm an aspiring software engineer pursuing a Bachelor of Science " +
+                "in Computer Science at UBC. My interests and background lie in full-stack development and entrepreneurship, " +
+                "though I am currently learning more about robotics and applied ML/NLP to expand my skillset. Most of my past " +
+                "internship and extracurricular experiences have been in web development using a variety of " +
+                "languages, technologies, and databases. Outside of the world of tech, I'm a chess and card game " +
+                "player, snowboarder, and football fan (go Packers!)."
     },
     "education": {
         "institution": "University of British Columbia", 
