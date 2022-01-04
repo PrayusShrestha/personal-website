@@ -138,27 +138,37 @@ const json = {
     ], 
     "projects": [
         {
+            "name": "This Website!", 
+            "github_url": "https://github.com/PrayusShrestha/personal-website", 
+            "description": "Developed this site using React.js and Tailwind CSS, with data stored in JSON format for ease of maintainability.",
+            "completed": "Jan. 2021", 
+            "logo": "website.png", 
+            "tech_stack": ["React.js"]
+        },
+        {
             "name": "Name & Shame", 
             "github_url": "https://github.com/PrayusShrestha/name-and-shame", 
-            "description": "Developed a dockerized web-application in Node.js with a MongoDB database, and React.js in the frontend that allows users to search and post on what companies have unethical practices", 
-            "start": "Sept. 2021", 
-            "end": "Sept. 2021", 
+            "description": "Developed a dockerized web-application in Node.js with a MongoDB database, and React.js in the frontend that allows users to search and post on what companies have unethical practices. " + 
+                            "Built for Hack the North.", 
+            "completed": "Sept. 2021", 
+            "logo": "name_and_shame.png",
             "tech_stack": ["Node.js", "React.js", "MongoDB", "Docker"]
         },
         {
             "name": "Coin Counter", 
             "github_url": "https://github.com/PrayusShrestha/CoinCounter", 
-            "description": "Utilized the OpenCV library to create a Java application where users upload an image of coins and are returned the total value and breakdown of the coins", 
-            "start": "Jan. 2021", 
-            "end": "Jan. 2021", 
+            "description": "Utilized the OpenCV library to create a Java application where users upload an image of coins and are returned the total value and breakdown of the coins. " + 
+                            "Built for NwHacks.", 
+            "completed": "Jan. 2021", 
+            "logo": "coincounter.jpg",
             "tech_stack": ["Java", "JavaFX", "OpenCV"]
         }, 
         {
             "name": "NBA All-Star Classifier", 
             "github_url": "https://github.com/PrayusShrestha/DSCI100", 
             "description": "Created an R classification model using the KNN classification algorithm to predict All-Stars based on player statistics", 
-            "start": "Oct. 2020", 
-            "end": "Dec. 2020", 
+            "completed": "Dec. 2020", 
+            "logo": "nba_classifier.png",
             "tech_stack": ["R", "Tidymodels"]
         }, 
         
