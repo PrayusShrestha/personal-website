@@ -24,20 +24,24 @@ function ExperienceListItem(props) {
 
   return (
       <>
-        <div class="flex flex-col justify-center h-1/3 m-4">
+        <div className="flex flex-col justify-center h-1/3 m-4 relative">
           <div
-            class="relative w-5/6 flex md:flex-row space-x-5 space-y-3 space-y-0 rounded-xl shadow-lg p-3 mx-auto border border-black bg-white relative">
-            <div class="w-full w-1/4 bg-white grid place-items-center text-xs">
-              <img src={logo_route} alt="Company Logo"/>
+            class="w-full flex flex-row space-x-5 space-y-3 rounded-lg hover:shadow-lg p-3 mx-auto bg-white">
+            <div className="w-1/4 grid place-items-center">
+              <a href={link} target="_blank">
+                <img src={logo_route} alt="Company Logo"/>
+              </a>
             </div>
-            <div class="w-full bg-white flex-col p-3 inline">
-              <div class="font-black text-gray-800 text-lg"> 
-                <div>
+            <div className="w-full flex-col p-3 inline">
+              <div className="text-oxford_blue"> 
+                <div className="font-black  text-xl">
                   {company}
                 </div> 
-                <div>{title}</div>
+                <div className="text-lg">
+                  {title}
+                </div>
               </div>
-              <p class="md:text-lg text-gray-500 text-base">
+              <p className="text-royal_blue font-light">
                 <ul className="list-disc">
                   {bullets.map(bullet => {
                     return(

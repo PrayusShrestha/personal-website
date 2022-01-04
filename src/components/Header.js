@@ -13,9 +13,9 @@ const Header = forwardRef(({ workExperienceClick }, ref) => {
     const github_url = json["personal"]["github_url"];
     const email = json["personal"]["email"];
     return (
-        <nav className="sticky absolute top-0 width-full bg-blue-300 text-white px-6 py-4 shadow-xl">
+        <nav className="sticky absolute top-0 width-full bg-oxford_blue text-white px-6 py-6 drop-shadow-xl">
             <ul className="m-0 p-0 list-none">
-                <li className="inline pr-2 border-r-2 mr-6 text-white">
+                <li className="inline pr-2 border-r-2 border-glitter mr-6 text-white">
                     Prayus Shrestha
                 </li>
 
@@ -35,7 +35,6 @@ const Header = forwardRef(({ workExperienceClick }, ref) => {
                     </a>
                 </li>
             </ul>
-            <hr></hr>
         </nav>
     );
 
