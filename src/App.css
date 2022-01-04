@@ -6,6 +6,10 @@
 @layer components {
 
     .resume-heading {
-      @apply w-11/12 mb-4 m-auto border-2 border-gray-400 bg-white rounded-lg p-4 flex-col justify-between leading-normal
+      @apply w-full mb-4 m-auto border-2 border-gray-400 bg-white rounded-lg p-4 flex-col justify-between leading-normal
+    }
+    
+    .resume-item {
+      @apply flex flex-col justify-center h-1/3 m-4 relative
     }
   }

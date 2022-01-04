@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         "white": "#fefefe", 
         "glitter": "#e7e9f0",
-        "light-glitter": "#EDEFF4",
+        "light_glitter": "#EDEFF4",
         "oxford_blue": "#051747", 
         "payne_grey": "#535f80", 
         "royal_blue": "#081F62"

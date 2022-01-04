@@ -24,7 +24,7 @@ function ExperienceListItem(props) {
 
   return (
       <>
-        <div className="flex flex-col justify-center h-1/3 m-4 relative">
+        <div className="flex flex-col justify-center h-1/3 m-10 relative">
           <div
             class="w-full flex flex-row space-x-5 space-y-3 rounded-lg hover:shadow-lg p-3 mx-auto bg-white">
             <div className="w-1/4 grid place-items-center">
@@ -34,10 +34,10 @@ function ExperienceListItem(props) {
             </div>
             <div className="w-full flex-col p-3 inline">
               <div className="text-oxford_blue"> 
-                <div className="font-black  text-xl">
+                <div className="font-bold text-xl">
                   {company}
                 </div> 
-                <div className="text-lg">
+                <div className="text-lg text-royal_blue">
                   {title}
                 </div>
               </div>
@@ -48,7 +48,6 @@ function ExperienceListItem(props) {
                       <li className="ml-4">
                         {bullet}
                       </li>
-                    
                     )
                   })}
                 </ul>   

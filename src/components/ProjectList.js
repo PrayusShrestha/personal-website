@@ -18,10 +18,10 @@ function ProjectList() {
                     </h1>
                 </div>
                 
-                <div className="">
+                <div>
                     {projects.map(project => {
                         return (
-                            <div class="">
+                            <div>
                                 <ProjectListItem data={project} />
                             </div>
                         );

@@ -70,7 +70,7 @@ const json = {
             "end": "Jun. 2021", 
             "location": "San Francisco, SF, USA",
             "bullets": [
-                "Saved $55,000+ annually by proposing and building a new alert system for server crashes and bookkeeping",
+                "Saved $55,000+ annually by building a new alert system for server crashes, order statuses, and bookkeeping",
                 "Scraped network traffic on 10+ food delivery services using Python to give users real-time order tracking",
                 "Integrated 3 restaurant and grocery delivery service APIs to add free and fast delivery sections to the MealMe app",
                 "Developed Flask microservices with a Firebase database for in-app chat, internal tools, dashboards, and call, SMS, and email automation"
@@ -140,7 +140,7 @@ const json = {
         {
             "name": "This Website!", 
             "github_url": "https://github.com/PrayusShrestha/personal-website", 
-            "description": "Developed this site using React.js and Tailwind CSS, with data stored in JSON format for ease of maintainability.",
+            "description": "I developed this site using React.js and Tailwind CSS to (1) learn more about front-end development and (2) as an online platform to showcase my skills and experiences!.",
             "completed": "Jan. 2021", 
             "logo": "website.png", 
             "tech_stack": ["React.js"]
@@ -148,8 +148,8 @@ const json = {
         {
             "name": "Name & Shame", 
             "github_url": "https://github.com/PrayusShrestha/name-and-shame", 
-            "description": "Developed a dockerized web-application in Node.js with a MongoDB database, and React.js in the frontend that allows users to search and post on what companies have unethical practices. " + 
-                            "Built for Hack the North.", 
+            "description": "A dockerized web-application built over a weekend for Hack the North (2021) using Node.js with a MongoDB database, and React.js in the frontend that allows users to search and post on what companies have unethical practices.", 
+                             
             "completed": "Sept. 2021", 
             "logo": "name_and_shame.png",
             "tech_stack": ["Node.js", "React.js", "MongoDB", "Docker"]
@@ -158,15 +158,15 @@ const json = {
             "name": "Coin Counter", 
             "github_url": "https://github.com/PrayusShrestha/CoinCounter", 
             "description": "Utilized the OpenCV library to create a Java application where users upload an image of coins and are returned the total value and breakdown of the coins. " + 
-                            "Built for NwHacks.", 
+                            "Built for NwHacks (2021).", 
             "completed": "Jan. 2021", 
-            "logo": "coincounter.jpg",
+            "logo": "coincounter.png",
             "tech_stack": ["Java", "JavaFX", "OpenCV"]
         }, 
         {
             "name": "NBA All-Star Classifier", 
             "github_url": "https://github.com/PrayusShrestha/DSCI100", 
-            "description": "Created an R classification model using the KNN classification algorithm to predict All-Stars based on player statistics", 
+            "description": "Created an R classification model using the KNN classification algorithm to predict All-Stars based on individual player statistics.", 
             "completed": "Dec. 2020", 
             "logo": "nba_classifier.png",
             "tech_stack": ["R", "Tidymodels"]

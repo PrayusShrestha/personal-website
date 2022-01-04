@@ -8,14 +8,17 @@ import { forwardRef } from 'react';
 // function Header(props) {
 const Header = forwardRef(({ workExperienceClick }, ref) => {
 
+    const {
+        email, 
+        linkedin_url,
+        github_url
+    } = json.personal;
 
-    const linkedin_url = json["personal"]["linkedin_url"];
-    const github_url = json["personal"]["github_url"];
-    const email = json["personal"]["email"];
+    
     return (
-        <nav className="sticky absolute top-0 width-full bg-oxford_blue text-white px-6 py-6 drop-shadow-xl">
-            <ul className="m-0 p-0 list-none">
-                <li className="inline pr-2 border-r-2 border-glitter mr-6 text-white">
+        <nav className="sticky absolute top-0 width-full bg-oxford_blue text-white text-lg px-6 py-6 drop-shadow-xl">
+            <ul className="list-none">
+                <li className="inline pr-4 border-r-2 border-glitter mr-6">
                     Prayus Shrestha
                 </li>
 
