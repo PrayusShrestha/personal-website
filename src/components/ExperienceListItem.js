@@ -23,49 +23,40 @@ function ExperienceListItem(props) {
   const logo_route = require("../data/logos/" + logo);
 
   return (
-      <div onClick={handleClick} className="border-2 p-2 hover:bg-zinc-300">
-        <Disclosure>
-          <Disclosure.Button className="py-2 w-full inline">
-              {/* <div className="inline float-left">
-                <img src={logo_route}></img>
-              </div> */}
-              <div className="text-left inline float-left"> 
-                <a className="hover:font-medium" href={link} target="_blank" >
-                  <FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon>: {company} 
-                </a>
-                <br></br>
-                <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>: {title}
-                <br></br>
-              {/* </div>
-              <div className="inline text-left float-right">  */}
-                <FontAwesomeIcon className="" icon={faMapPin}></FontAwesomeIcon> : {location}                
-                  <br></br>
-                <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>: {start} - {end ? end : "Present"}
+      <>
+        <div className="flex flex-col justify-center h-1/3 m-10 relative">
+          <div
+            class="w-full flex flex-row space-x-5 space-y-3 rounded-lg hover:shadow-lg p-3 mx-auto bg-white">
+            <div className="w-1/4 grid place-items-center">
+              <a href={link} target="_blank">
+                <img src={logo_route} alt="Company Logo"/>
+              </a>
+            </div>
+            <div className="w-full flex-col p-3 inline">
+              <div className="text-oxford_blue"> 
+                <div className="font-bold text-xl">
+                  {company}
+                </div> 
+                <div className="text-lg text-royal_blue">
+                  {title}
+                </div>
               </div>
-              <div className="inline">
-                <FontAwesomeIcon icon={arrowDir == -1 ? faArrowDown : faArrowUp}></FontAwesomeIcon>
-              </div>
-
-          </Disclosure.Button>
-          <Disclosure.Panel className="text-gray-500">
-              <ul className="list-disc">
-                {bullets.map(bullet => {
-                  return(
-                    <li className="hover:font-medium ml-4">
-                      {bullet}
-                    </li>
-                  
-                  )
-                })}
-              </ul>
-          </Disclosure.Panel>
-        </Disclosure>
-      </div>
-        
+              <p className="text-royal_blue font-light">
+                <ul className="list-disc">
+                  {bullets.map(bullet => {
+                    return(
+                      <li className="ml-4">
+                        {bullet}
+                      </li>
+                    )
+                  })}
+                </ul>   
+              </p>
+            </div>
+          </div>
+        </div>
+      </> 
     );
-    // return ( 
-    //     <span> An Item </span>
-    //  );
 }
 
 export default ExperienceListItem;

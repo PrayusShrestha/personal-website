@@ -7,22 +7,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function About() {
 
     return ( 
-            <div class="flex p-10 w-3/4 m-auto mb-20 text-center">
-                <div class="border border-gray-400 bg-white rounded-3xl p-4 flex flex-col justify-between leading-normal">
-                    <div class="mb-8">
-                        <div class="text-gray-900 font-bold text-xl mb-2">Welcome!</div>
-                        <p class="text-gray-700 text-base">
+            <div class="flex p-10 w-11/12 my-10 m-auto text-center bg-glitter">
+                <div class="border-2 border-payne_grey bg-light-glitter bg-white rounded-lg p-4 flex flex-col hover:border-oxford_blue hover:shadow-lg">
+                    <div class="">
+                        <div class="font-extrabold text-xl mb-2 text-oxford_blue">Welcome!</div>
+                        <p class="text-base text-payne_grey font-light">
                             {json.personal.about}
                         </p>
                     </div>
-                    <div class="flex items-center m-auto mt-2">
-                        <img class="w-10 h-10 rounded-full mr-4" src={headshot} alt="Avatar of Prayus"></img>
-                        <div class="text-sm">
-                            <ul className="m-0 p-0 list-none text-lg">
-                                <li className="inline pr-4 border-r-2 mr-6 border-black ">
-                                    Prayus Shrestha
+                    <div class="flex items-center m-auto mt-1">
+                        <img class="w-10 h-10 p-1 border border-black rounded-full mr-2 mt-2" src={headshot} alt="Avatar of Prayus"></img>
+                        <div class="text-sm text-payne_grey">
+                            <ul className="list-none text-lg">
+                                <li className="inline pr-4 border-r-2 mr-4 border-royal_blue font-extralight">
+                                    Prayus Shrestha 
                                 </li>
-                                <li className="inline block pr-4">
+                                <li className="inline block pr-4 hover:bold">
                                     <a target="_blank" href={json.personal.linkedin_url}>
                                         <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                                     </a>
