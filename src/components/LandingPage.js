@@ -22,7 +22,7 @@ function LandingPage() {
     return(
         <div className="bg-glitter">
             <Header/>
-            <div className="h-screen">
+            <div className="h-screen bg-white">
                 <div className="text-4xl text-center relative left-1/2 top-2/4 -translate-x-1/2 -translate-y-1/2 text-payne_grey">
                     <h1 className="text-8xl pb-4 text-oxford_blue">Prayus Shrestha</h1>    
                     <Typist onTypingDone={onTypingDone} avgTypingDelay={80} stdTypingDelay={0} key={idx}>
