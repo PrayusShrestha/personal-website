@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.62618c49.css",
-    "main.js": "/personal-website/static/js/main.a6126b14.js",
+    "main.js": "/personal-website/static/js/main.8a5af5e6.js",
     "static/js/787.3058b895.chunk.js": "/personal-website/static/js/787.3058b895.chunk.js",
     "static/media/coincounter.png": "/personal-website/static/media/coincounter.ec7104b16009de4fa902.png",
     "static/media/nba_classifier.png": "/personal-website/static/media/nba_classifier.a3ed5ab0dc134dfa1d38.png",
@@ -16,11 +16,11 @@
     "static/media/istall.png": "/personal-website/static/media/istall.26ff3b1527a3136036e2.png",
     "index.html": "/personal-website/index.html",
     "main.62618c49.css.map": "/personal-website/static/css/main.62618c49.css.map",
-    "main.a6126b14.js.map": "/personal-website/static/js/main.a6126b14.js.map",
+    "main.8a5af5e6.js.map": "/personal-website/static/js/main.8a5af5e6.js.map",
     "787.3058b895.chunk.js.map": "/personal-website/static/js/787.3058b895.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.62618c49.css",
-    "static/js/main.a6126b14.js"
+    "static/js/main.8a5af5e6.js"
   ]
 }
