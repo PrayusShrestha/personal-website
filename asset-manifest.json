@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.20d14359.css",
-    "main.js": "/personal-website/static/js/main.d7aad7cc.js",
+    "main.css": "/personal-website/static/css/main.62618c49.css",
+    "main.js": "/personal-website/static/js/main.a6126b14.js",
     "static/js/787.3058b895.chunk.js": "/personal-website/static/js/787.3058b895.chunk.js",
+    "static/media/coincounter.png": "/personal-website/static/media/coincounter.ec7104b16009de4fa902.png",
+    "static/media/nba_classifier.png": "/personal-website/static/media/nba_classifier.a3ed5ab0dc134dfa1d38.png",
+    "static/media/name_and_shame.png": "/personal-website/static/media/name_and_shame.10daa135579350845957.png",
+    "static/media/website.png": "/personal-website/static/media/website.9dbfcde89c065fc0eab0.png",
+    "static/media/open_robotics.png": "/personal-website/static/media/open_robotics.4089d2f27f51d82c36db.png",
+    "static/media/systopia.png": "/personal-website/static/media/systopia.3b69debc5e05025fb7f2.png",
     "static/media/cartoon_headshot.png": "/personal-website/static/media/cartoon_headshot.d222e7b11eb9169c600b.png",
-    "static/media/roving_chessnuts.png": "/personal-website/static/media/roving_chessnuts.cd8d06d1091cb6031289.png",
-    "static/media/ubc.png": "/personal-website/static/media/ubc.7c1baad723afeaaf3e32.png",
-    "static/media/systopia.svg": "/personal-website/static/media/systopia.c39ffd249d56ddc4c16c.svg",
+    "static/media/mealme.png": "/personal-website/static/media/mealme.634ae0a8d5e7f758a9bd.png",
+    "static/media/ubc.png": "/personal-website/static/media/ubc.53dd225a37548f4926cd.png",
+    "static/media/roving_chessnuts.png": "/personal-website/static/media/roving_chessnuts.5f4cff788fb0eb963d03.png",
+    "static/media/istall.png": "/personal-website/static/media/istall.26ff3b1527a3136036e2.png",
     "index.html": "/personal-website/index.html",
-    "main.20d14359.css.map": "/personal-website/static/css/main.20d14359.css.map",
-    "main.d7aad7cc.js.map": "/personal-website/static/js/main.d7aad7cc.js.map",
+    "main.62618c49.css.map": "/personal-website/static/css/main.62618c49.css.map",
+    "main.a6126b14.js.map": "/personal-website/static/js/main.a6126b14.js.map",
     "787.3058b895.chunk.js.map": "/personal-website/static/js/787.3058b895.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20d14359.css",
-    "static/js/main.d7aad7cc.js"
+    "static/css/main.62618c49.css",
+    "static/js/main.a6126b14.js"
   ]
 }
