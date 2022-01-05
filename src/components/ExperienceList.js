@@ -9,14 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function ExperienceList(props) {
     const title = props.type;
     const experiences = json.experiences.filter((experience) => { return experience.type == title; });
-    const [arrowDir, setArrowDir] = useState(-1);
 
     const Scroll = require('react-scroll');
     const Element = Scroll.Element;
 
-    const handleClick = () => {
-        setArrowDir(arrowDir * -1);
-    }
 
     return (
 

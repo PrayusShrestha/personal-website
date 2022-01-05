@@ -11,7 +11,6 @@ function ProjectListItem(props) {
       logo, 
       completed, 
       tech_stack} = props.data; 
-    const [arrowDir, setArrowDir] = useState(-1);
     
     const logo_route = require("../data/logos/" + logo);    
     return (

@@ -17,9 +17,6 @@ function LandingPage() {
         "the creator of this website", 
     ]
 
-    const onTypingDone = () => {
-        setIdx(idx + 1);
-    }
 
     const offset = -120;
     return(
@@ -28,7 +25,7 @@ function LandingPage() {
             <div className="h-screen bg-white">
                 <div className="block text-4xl text-center relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-payne_grey">
                     <h1 className="text-8xl pb-4 text-oxford_blue">Prayus Shrestha</h1>    
-                    <Typist className="pb-12 relative" onTypingDone={onTypingDone} avgTypingDelay={80} stdTypingDelay={0} key={idx}>
+                    <Typist className="pb-12 relative" onTypingDone={() => {setIdx(idx + 1)}} avgTypingDelay={80} stdTypingDelay={0} key={idx}>
                         {`I'm` } {messages[idx % messages.length]}
                         <Typist.Backspace count={messages[idx % messages.length].length} delay={2000}/>
                     </Typist>
