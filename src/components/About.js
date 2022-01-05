@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function About() {
 
     return ( 
-            <div class="flex p-10 w-11/12 my-10 m-auto text-center bg-glitter">
-                <div class="border-2 border-payne_grey bg-light-glitter bg-white rounded-lg p-4 flex flex-col hover:border-oxford_blue hover:shadow-lg">
+            <div class="flex p-10 w-11/12 h-11/12 my-10 m-auto text-center bg-glitter" id="About">
+                <div class="border-2 border-payne_grey bg-white rounded-lg p-4 flex flex-col hover:border-oxford_blue hover:shadow-lg">
                     <div class="">
                         <div class="font-extrabold text-xl mb-2 text-oxford_blue">Welcome!</div>
                         <p class="text-base text-payne_grey font-light">

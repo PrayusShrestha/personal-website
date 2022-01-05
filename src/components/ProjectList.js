@@ -11,9 +11,9 @@ function ProjectList() {
     const [arrowDir, setArrowDir] = useState(-1);
 
     return (
-        <div class="resume-heading my-10 border-payne_grey hover:border-oxford_blue hover:shadow-inner">
+        <div id="Projects" class="resume-heading my-10 border-payne_grey hover:border-oxford_blue hover:shadow-inner">
                 <div className="inline mx-auto font-extrabold text-xl text-center text-oxford_blue">
-                    <h1 className="">
+                    <h1 id=""className="">
                         Projects 
                     </h1>
                 </div>

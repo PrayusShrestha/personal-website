@@ -13,26 +13,21 @@ function ExperienceListItem(props) {
     start, 
     end, 
     location, 
-    bullets } = props.data;
+    bullets 
+  } = props.data;
 
-  const [arrowDir, setArrowDir] = useState(-1);
-  const handleClick = () => {
-    setArrowDir(arrowDir * -1);
-  }
 
   const logo_route = require("../data/logos/" + logo);
 
   return (
-      <>
-        <div className="flex flex-col justify-center h-1/3 m-10 relative">
-          <div
-            class="w-full flex flex-row space-x-5 space-y-3 rounded-lg hover:shadow-lg p-3 mx-auto bg-white">
+        <div className="justify-center h-1/3 m-10 relative z-0 hover:shadow-lg">
+          <div class="w-full flex flex-row space-x-5 space-y-3 rounded-lg p-3 mx-auto bg-white">
             <div className="w-1/4 grid place-items-center">
               <a href={link} target="_blank">
                 <img src={logo_route} alt="Company Logo"/>
               </a>
             </div>
-            <div className="w-full flex-col p-3 inline">
+            <div className="w-full flex-col p-3 inline relative">
               <div className="text-oxford_blue"> 
                 <div className="font-bold text-xl">
                   {company}
@@ -55,7 +50,6 @@ function ExperienceListItem(props) {
             </div>
           </div>
         </div>
-      </> 
     );
 }
 

@@ -11,25 +11,30 @@ function ExperienceList(props) {
     const experiences = json.experiences.filter((experience) => { return experience.type == title; });
     const [arrowDir, setArrowDir] = useState(-1);
 
+    const Scroll = require('react-scroll');
+    const Element = Scroll.Element;
+
     const handleClick = () => {
         setArrowDir(arrowDir * -1);
     }
 
     return (
-        <div class="resume-heading my-10 border-payne_grey hover:border-oxford_blue hover:shadow-lg">
-            <div className="text-center">
-                <h1 className="inline mx-auto font-extrabold text-xl text-oxford_blue">
-                    {title} 
-                </h1>
+
+            <div id={title} class="resume-heading my-10 border-payne_grey hover:border-oxford_blue hover:shadow-lg" >
+                <div className="text-center">
+                    <h1 className="inline mx-auto font-extrabold text-xl text-oxford_blue">
+                        {title} 
+                    </h1>
+                </div>
+                {experiences.map(experience => {
+                    return (
+                        <div class="">
+                            <ExperienceListItem data={experience} />
+                        </div>
+                    );
+                })}
             </div>
-            {experiences.map(experience => {
-                return (
-                    <div class="">
-                        <ExperienceListItem data={experience} />
-                    </div>
-                );
-            })}
-        </div>
+
     );
 }
 
