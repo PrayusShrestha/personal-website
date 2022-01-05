@@ -140,7 +140,7 @@ const json = {
         {
             "name": "This Website!", 
             "github_url": "https://github.com/PrayusShrestha/personal-website", 
-            "description": "I developed this site using React.js and Tailwind CSS to (1) learn more about front-end development and (2) as an online platform to showcase my skills and experiences!.",
+            "description": "I developed this site using React.js and Tailwind CSS to (1) learn more about front-end development and (2) as an online platform to showcase my skills and experiences!",
             "completed": "Jan. 2021", 
             "logo": "website.png", 
             "tech_stack": ["React.js"]
